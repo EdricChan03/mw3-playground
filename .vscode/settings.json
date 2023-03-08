@@ -1,0 +1,5 @@
+{
+  "yaml.schemas": {
+    "https://json.schemastore.org/github-workflow.json": "file:///Users/edricchan/Desktop/Projects/Github/mw3-playground/.github/workflows/deploy.yml"
+  }
+}
