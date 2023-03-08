@@ -1,6 +1,6 @@
 import adapter from '@sveltejs/adapter-auto';
 import { vitePreprocess } from '@sveltejs/kit/vite';
-import { kitBasePath } from './config-shared';
+import { kitBasePath } from './config-shared.js';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
