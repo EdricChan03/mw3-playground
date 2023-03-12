@@ -1,6 +1,9 @@
 import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/kit/vite';
-import { kitBasePath } from './config-shared.js';
+
+const isCi = !!process.env.CI;
+const repoName = process.env.GITHUB_REPOSITORY?.split('/')?.[1] ?? 'mw3-playground';
+const kitBasePath = isCi ? `/${repoName}` : '/';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
