@@ -3,7 +3,7 @@ import { vitePreprocess } from '@sveltejs/kit/vite';
 
 const isCi = !!process.env.CI;
 const repoName = process.env.GITHUB_REPOSITORY?.split('/')?.[1] ?? 'mw3-playground';
-const kitBasePath = isCi ? `/${repoName}` : '/';
+const kitBasePath = isCi ? `/${repoName}` : '';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
