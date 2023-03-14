@@ -15,7 +15,7 @@
 
   export let data: PageData;
 
-  let disabled = true;
+  let disabled = false;
 
   const onDisabledChange = (ev: Event) => {
     disabled = (ev.target as MdCheckbox).checked;
