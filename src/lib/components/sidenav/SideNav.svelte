@@ -3,14 +3,9 @@
   import '@material/web/list/list';
   import '@material/web/list/list-item-link';
 
-  import { page } from '$app/stores';
   import type { NavItem } from './types';
 
   export let items: NavItem[];
-
-  $: {
-    console.log($page.url.pathname);
-  }
 </script>
 
 <!-- <nav class="m-3 flex flex-col {$$props.class}">
@@ -22,7 +17,7 @@
 </nav> -->
 <md-list class="h-full">
   {#each items as item}
-    <md-list-item-link headline={item.label} href={item.href} active={$page.url.pathname.endsWith(item.href)}>
+    <md-list-item-link headline={item.label} href={item.href}>
       <md-icon data-variant="icon" slot="start">widgets</md-icon>
     </md-list-item-link>
   {/each}
