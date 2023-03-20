@@ -1,12 +1,9 @@
 import type { LayoutLoad } from './$types';
+import { components } from './components';
 
 export const load = (async () => {
   return {
-    components: [
-      { label: 'Button', href: 'button' },
-      { label: 'Checkbox', href: 'checkbox' },
-      { label: 'Divider', href: 'divider' },
-    ]
+    components
   };
 }) satisfies LayoutLoad;
 

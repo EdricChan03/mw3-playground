@@ -32,7 +32,7 @@
     <md-checkbox checked={disabled} on:change={onDisabledChange} />
     Disable buttons
   </label>
-  <Example title="Default">
+  <Example title="Default" id="button-default">
     <div class="flex gap-3 flex-wrap items-center p-6">
       <md-elevated-button label="Elevated" {disabled} />
       <md-filled-button label="Filled" {disabled} />
@@ -44,7 +44,7 @@
     </div>
   </Example>
 
-  <Example title="With icons">
+  <Example title="With icons" id="button-icons">
     <div class="flex gap-3 p-6">
       <md-tonal-button label="Send" {disabled}>
         <svg slot="icon" viewBox="0 0 48 48"><path d="M6 40V8l38 16Zm3-4.65L36.2 24 9 12.5v8.4L21.1 24 9 27Zm0 0V12.5 27Z"/></svg>

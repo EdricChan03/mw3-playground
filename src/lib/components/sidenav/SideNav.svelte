@@ -3,22 +3,49 @@
   import '@material/web/list/list';
   import '@material/web/list/list-item-link';
 
+  import { page } from '$app/stores';
   import type { NavItem } from './types';
 
   export let items: NavItem[];
+
+  const defaultClasses = 'bg-slate-100 hover:bg-slate-200 active:bg-slate-300';
+  const activeClasses = 'bg-blue-100 hover:bg-blue-200 active:bg-blue-300';
+
+  const getClasses = (url: URL, href: string) =>
+    isActive(url, href) ? activeClasses : defaultClasses;
+  const isActive = (url: URL, href: string) => url.pathname.endsWith(href);
 </script>
 
-<!-- <nav class="m-3 flex flex-col {$$props.class}">
-  <ul class="flex flex-row sm:flex-col justify-evenly sticky top-3">
-    {#each items as item}
-      <li class="p-3 rounded focus:ring focus:ring-slate-200 focus:ring-opacity-50 shadow-md transition-all bg-slate-100 hover:bg-slate-200 active:bg-slate-300"><a href={item.href}>{item.label}</a></li>
-    {/each}
-  </ul>
-</nav> -->
-<md-list class="h-full">
-  {#each items as item}
-    <md-list-item-link headline={item.label} href={item.href}>
-      <md-icon data-variant="icon" slot="start">widgets</md-icon>
-    </md-list-item-link>
-  {/each}
-</md-list>
+<nav class="flex flex-col gap-1 p-6 sm:w-[300px] sm:border-r {$$props.class}">
+  <div class="flex flex-col gap-1 overflow-auto">
+    <h3 class="font-semibold text-sm sticky top-0">
+      <a
+        href="/components"
+        class="block p-2 rounded focus:ring focus:ring-slate-200 focus:ring-opacity-50 transition-all bg-slate-500 hover:bg-slate-600 active:bg-slate-700 text-white"
+        >Components</a
+      >
+    </h3>
+    <ul class="flex flex-col gap-1 justify-evenly">
+      {#each items as { href, label }}
+        <li
+          class="basis-1/3 border-l-4 {isActive($page.url, href)
+            ? 'border-blue-500'
+            : ''} pl-1"
+          aria-current="false"
+        >
+          <a
+            href="/components/{href}"
+            class="flex items-center gap-2 p-3 rounded focus:ring focus:ring-slate-200 focus:ring-opacity-50 transition-all {getClasses(
+              $page.url,
+              href
+            )}"
+            ><div class="w-6 h-6 flex justify-center items-center">
+              <span class="material-symbols-outlined">widgets</span>
+            </div>
+            <span>{label}</span></a
+          >
+        </li>
+      {/each}
+    </ul>
+  </div>
+</nav>

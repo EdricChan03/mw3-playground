@@ -6,7 +6,7 @@
   export let disabled: boolean = false;
 </script>
 
-<Example title="Theming">
+<Example title="Theming" id="button-theming">
   <div class="flex gap-3 flex-wrap p-6">
     <md-elevated-button label="Elevated" {disabled}></md-elevated-button>
     <md-filled-button label="Filled" {disabled}></md-filled-button>
