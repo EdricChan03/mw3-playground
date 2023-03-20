@@ -15,7 +15,7 @@
   {#if isColor}
     <span style:background-color={value} class="inline-block w-4 h-4 rounded-full border-2" />
   {/if}
-  <input type="text" bind:value class="h-fit w-20" />
+  <input type="text" bind:value class="h-fit w-20 border border-slate-500 rounded" />
   <md-filled-tonal-icon-button title="Reset to default" on:click={onResetClick}>
     <md-icon>undo</md-icon>
   </md-filled-tonal-icon-button>
