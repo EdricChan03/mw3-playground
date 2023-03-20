@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { base } from '$app/paths';
   import type { PageData } from './$types';
 
   export let data: PageData;
@@ -8,7 +9,7 @@
 <section class="grid grid-cols-2 sm:grid-cols-3 gap-4 m-4">
   {#each data.components as cmp}
     <a
-      href="/components/{cmp.href}"
+      href="{base}/components/{cmp.href}"
       class="hover:bg-slate-100 active:bg-slate-200 transition-all basis-1/3 rounded"
     >
       <article class="flex flex-col border rounded h-full overflow-hidden">

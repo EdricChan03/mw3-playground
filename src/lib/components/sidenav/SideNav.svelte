@@ -2,6 +2,7 @@
   import '@material/web/icon/icon';
 
   import { page } from '$app/stores';
+  import { base } from '$app/paths';
   import type { NavItem } from './types';
 
   export let items: NavItem[];
@@ -18,7 +19,7 @@
   <div class="flex flex-col gap-1 overflow-auto">
     <h3 class="font-semibold text-sm sticky top-0">
       <a
-        href="/components"
+        href="{base}/components"
         class="block p-2 rounded focus:ring focus:ring-slate-200 focus:ring-opacity-50 transition-all bg-slate-500 hover:bg-slate-600 active:bg-slate-700 text-white"
         >Components</a
       >
@@ -32,7 +33,7 @@
           aria-current="false"
         >
           <a
-            href="/components/{href}"
+            href="{base}/components/{href}"
             class="flex items-center gap-2 p-3 rounded focus:ring focus:ring-slate-200 focus:ring-opacity-50 transition-all {getClasses(
               $page.url,
               href
