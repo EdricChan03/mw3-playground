@@ -1,7 +1,5 @@
 <script lang="ts">
   import '@material/web/icon/icon';
-  import '@material/web/list/list';
-  import '@material/web/list/list-item-link';
 
   import { page } from '$app/stores';
   import type { NavItem } from './types';
