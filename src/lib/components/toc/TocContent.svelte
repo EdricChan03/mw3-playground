@@ -4,13 +4,13 @@
   export let headings: TocHeading[];
 </script>
 
-<ul>
+<ul class="flex flex-col">
   {#each headings as heading}
-    <li class="rounded transition-all p-2">
+    <li>
       {#if heading.children}
         <svelte:self {...heading} />
       {:else}
-        <a href="#{heading.slug}">{heading.title}</a>
+        <a href="#{heading.slug}" class="block rounded transition-all p-2 hover:bg-blue-100 active:bg-blue-200 focus:ring focus:ring-inset focus:ring-blue-700 focus:ring-opacity-50">{heading.title}</a>
       {/if}
     </li>
   {/each}
