@@ -12,7 +12,7 @@
 </script>
 
 <Header />
-<div class="flex flex-col sm:flex-row gap-2 mt-[72px] sm:overflow-hidden">
+<div class="flex flex-col sm:flex-row gap-2 mt-[72px] sm:overflow-hidden h-full">
   <SideNav items={data.components} class="sm:fixed sm:inset-0 sm:top-[84px]" />
 
   <main class="sm:w-full m-6 sm:pl-[300px] {hasExample ? 'sm:pr-[170px]' : ''} overflow-auto">
