@@ -7,8 +7,8 @@
 
   export let items: NavItem[];
 
-  const defaultClasses = 'bg-slate-100 hover:bg-slate-200 active:bg-slate-300';
-  const activeClasses = 'bg-blue-100 hover:bg-blue-200 active:bg-blue-300';
+  const defaultClasses = 'focus:ring-slate-700 bg-slate-100 hover:bg-slate-200 active:bg-slate-300';
+  const activeClasses = 'focus:ring-blue-700 bg-blue-100 hover:bg-blue-200 active:bg-blue-300';
 
   const getClasses = (url: URL, href: string) =>
     isActive(url, href) ? activeClasses : defaultClasses;
@@ -20,7 +20,7 @@
     <h3 class="font-semibold text-sm sticky top-0">
       <a
         href="{base}/components"
-        class="block p-2 rounded focus:ring focus:ring-slate-200 focus:ring-opacity-50 transition-all bg-slate-500 hover:bg-slate-600 active:bg-slate-700 text-white"
+        class="block p-2 rounded focus:ring focus:ring-inset focus:ring-slate-100 focus:ring-opacity-50 transition-all bg-slate-500 hover:bg-slate-600 active:bg-slate-700 text-white"
         >Components</a
       >
     </h3>
@@ -34,7 +34,7 @@
         >
           <a
             href="{base}/components/{href}"
-            class="flex items-center gap-2 p-3 rounded focus:ring focus:ring-slate-200 focus:ring-opacity-50 transition-all {getClasses(
+            class="flex items-center gap-2 p-3 rounded focus:ring focus:ring-inset focus:ring-opacity-50 transition-all {getClasses(
               $page.url,
               href
             )}"
