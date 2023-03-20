@@ -7,7 +7,7 @@
 
   export let data: LayoutData;
 
-  $: currentComponent = data.components.find((cmp) => $page.url.pathname.endsWith(cmp.href));
+  $: currentComponent = data.components.find((cmp) => $page.url.pathname.endsWith(cmp.slug));
   $: hasExample = currentComponent?.examples !== undefined;
 </script>
 

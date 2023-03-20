@@ -4,7 +4,7 @@ export type ComponentExample = TocHeading;
 
 export interface Component {
   label: string;
-  href: string;
+  slug: string;
   imgSrc?: string;
   desc?: string;
   examples?: ComponentExample[];
@@ -13,7 +13,7 @@ export interface Component {
 export const components: Component[] = [
   {
     label: 'Button',
-    href: 'button',
+    slug: 'button',
     imgSrc: 'https://material.angular.io/assets/screenshots/button.scene.png',
     desc: 'An interactive button with a range of presentation options.',
     examples: [
@@ -24,13 +24,13 @@ export const components: Component[] = [
   },
   {
     label: 'Checkbox',
-    href: 'checkbox',
+    slug: 'checkbox',
     imgSrc: 'https://material.angular.io/assets/screenshots/checkbox.scene.png',
     desc: 'Captures boolean input with an optional indeterminate mode.'
   },
   {
     label: 'Divider',
-    href: 'divider',
+    slug: 'divider',
     imgSrc: 'https://material.angular.io/assets/screenshots/divider.scene.png',
     desc: 'A vertical or horizontal visual divider.'
   }
