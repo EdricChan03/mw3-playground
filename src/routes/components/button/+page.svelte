@@ -23,17 +23,17 @@
 </script>
 
 <div class="flex flex-col gap-4">
-  <div class="flex gap-2 items-center">
+  <div class="flex gap-2 flex-wrap items-center">
     <md-icon aria-hidden="true">widgets</md-icon>
     <h2 class="text-2xl font-semibold">Button</h2>
   </div>
   <!-- svelte-ignore a11y-label-has-associated-control -->
-  <label class="flex items-center">
+  <label class="flex flex-wrap items-center">
     <md-checkbox checked={disabled} on:change={onDisabledChange} />
     Disable buttons
   </label>
   <Example title="Default">
-    <div class="flex items-center gap-3 p-6">
+    <div class="flex gap-3 flex-wrap items-center p-6">
       <md-elevated-button label="Elevated" {disabled} />
       <md-filled-button label="Filled" {disabled} />
       <md-outlined-button label="Outlined" {disabled} />
