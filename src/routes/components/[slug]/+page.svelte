@@ -4,8 +4,8 @@
   export let data: PageData;
 </script>
 
-<div class="flex flex-col items-center justify-center h-full mt-[-72px]">
-  <div class="flex flex-col items-center justify-center gap-3 border border-red-500 p-3">
+<div class="flex flex-col items-center justify-center">
+  <div class="flex flex-col items-center justify-center gap-3 border-2 border-red-500 rounded p-3">
     <div class="flex flex-col items-center justify-center">
       <md-icon aria-hidden="true">error</md-icon>
       <h3 class="text-2xl font-semibold">Not found</h3>
