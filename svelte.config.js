@@ -1,6 +1,8 @@
 import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/kit/vite';
 
+import components from './src/lib/data/components.cjs';
+
 const isCi = !!process.env.CI;
 const repoName = process.env.GITHUB_REPOSITORY?.split('/')?.[1] ?? 'mw3-playground';
 const kitBasePath = isCi ? `/${repoName}` : '';
@@ -18,6 +20,10 @@ const config = {
 		adapter: adapter({
 			fallback: '404.html'
 		}),
+
+    prerender: {
+      entries: ['*', ...components.map(c => `/components/${c.slug}`)]
+    },
 
 		paths: {
 			base: kitBasePath
