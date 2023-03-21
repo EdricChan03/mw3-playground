@@ -38,6 +38,7 @@
   {
     "label": "Checkbox",
     "slug": "checkbox",
+    "icon": "check_box",
     "imgSrc": "https://material.angular.io/assets/screenshots/checkbox.scene.png",
     "desc": "Captures boolean input with an optional indeterminate mode."
   },
@@ -68,12 +69,14 @@
   {
     "label": "List",
     "slug": "list",
+    "icon": "list",
     "imgSrc": "https://material.angular.io/assets/screenshots/list.scene.png",
     "desc": "Presents conventional lists of items."
   },
   {
     "label": "Menu",
     "slug": "menu",
+    "icon": "more_vert",
     "imgSrc": "https://material.angular.io/assets/screenshots/menu.scene.png",
     "desc": "A floating panel of nestable options."
   },
@@ -92,6 +95,7 @@
   {
     "label": "Radio",
     "slug": "radio",
+    "icon": "radio_button_checked",
     "imgSrc": "https://material.angular.io/assets/screenshots/radio.scene.png",
     "desc": "Allows the user to select one option from a group."
   },
@@ -104,12 +108,14 @@
   {
     "label": "Switch",
     "slug": "switch",
+    "icon": "toggle_on",
     "imgSrc": "https://material.angular.io/assets/screenshots/slide-toggle.scene.png",
     "desc": "Captures boolean values as a clickable and draggable switch."
   },
   {
     "label": "Text field",
     "slug": "text-field",
+    "icon": "text_fields",
     "imgSrc": "https://material.angular.io/assets/screenshots/form-field.scene.png",
     "desc": "Wraps input fields so they are displayed consistently."
   }

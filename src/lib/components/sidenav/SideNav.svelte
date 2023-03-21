@@ -25,7 +25,7 @@
       >
     </h3>
     <ul class="flex flex-col gap-1 justify-evenly">
-      {#each items as { slug, label }}
+      {#each items as { label, slug, icon }}
         <li
           class="basis-1/3 border-l-4 {isActive($page.url, slug)
             ? 'border-blue-500'
@@ -39,7 +39,7 @@
               slug
             )}"
             ><div class="w-6 h-6 flex justify-center items-center">
-              <span class="material-symbols-outlined">widgets</span>
+              <span class="material-symbols-outlined">{icon ?? 'widgets'}</span>
             </div>
             <span>{label}</span></a
           >

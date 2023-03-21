@@ -6,6 +6,7 @@ export type ComponentExample = TocHeading;
 export interface Component {
   label: string;
   slug: string;
+  icon?: string;
   imgSrc?: string;
   desc?: string;
   children?: Component[];
