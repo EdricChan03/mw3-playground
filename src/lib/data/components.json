@@ -3,13 +3,21 @@
     "label": "Badge",
     "slug": "badge",
     "imgSrc": "https://material.angular.io/assets/screenshots/badge.scene.png",
-    "desc": "A small value indicator that can be overlaid on another object."
+    "desc": "A small value indicator that can be overlaid on another object.",
+    "links": {
+      "spec": "https://m3.material.io/components/badges/overview",
+      "source": "https://github.com/material-components/material-web/tree/v1.0.0-pre.7/badge"
+    }
   },
   {
     "label": "Button",
     "slug": "button",
     "imgSrc": "https://material.angular.io/assets/screenshots/button.scene.png",
     "desc": "An interactive button with a range of presentation options.",
+    "links": {
+      "spec": "https://m3.material.io/components/all-buttons",
+      "source": "https://github.com/material-components/material-web/tree/v1.0.0-pre.7/button"
+    },
     "examples": [
       {
         "title": "Default",
@@ -27,11 +35,19 @@
     "children": [
       {
         "label": "Floating action button",
-        "slug": "fab"
+        "slug": "fab",
+        "links": {
+          "spec": "https://m3.material.io/components/floating-action-button/overview",
+          "source": "https://github.com/material-components/material-web/tree/v1.0.0-pre.7/fab"
+        }
       },
       {
         "label": "Segmented button",
-        "slug": "segmented"
+        "slug": "segmented",
+        "links": {
+          "spec": "https://m3.material.io/components/segmented-buttons/overview",
+          "source": "https://github.com/material-components/material-web/tree/v1.0.0-pre.7/segmentedbutton"
+        }
       }
     ]
   },
@@ -40,45 +56,72 @@
     "slug": "checkbox",
     "icon": "check_box",
     "imgSrc": "https://material.angular.io/assets/screenshots/checkbox.scene.png",
-    "desc": "Captures boolean input with an optional indeterminate mode."
+    "desc": "Captures boolean input with an optional indeterminate mode.",
+    "links": {
+      "spec": "https://m3.material.io/components/checkbox/overview",
+      "source": "https://github.com/material-components/material-web/tree/v1.0.0-pre.7/checkbox"
+    }
   },
   {
     "label": "Chips",
     "slug": "chips",
     "imgSrc": "https://material.angular.io/assets/screenshots/chips.scene.png",
-    "desc": "Presents a list of items as a set of small, tactile entities."
+    "desc": "Presents a list of items as a set of small, tactile entities.",
+    "links": {
+      "spec": "https://m3.material.io/components/chips/overview",
+      "source": "https://github.com/material-components/material-web/tree/v1.0.0-pre.7/chips"
+    }
   },
   {
     "label": "Dialog",
     "slug": "dialog",
     "imgSrc": "https://material.angular.io/assets/screenshots/dialog.scene.png",
-    "desc": "A configurable modal that displays dynamic content."
+    "desc": "A configurable modal that displays dynamic content.",
+    "links": {
+      "spec": "https://m3.material.io/components/dialogs/overview",
+      "source": "https://github.com/material-components/material-web/tree/v1.0.0-pre.7/dialog"
+    }
   },
   {
     "label": "Divider",
     "slug": "divider",
     "imgSrc": "https://material.angular.io/assets/screenshots/divider.scene.png",
-    "desc": "A vertical or horizontal visual divider."
+    "desc": "A vertical or horizontal visual divider.",
+    "links": {
+      "spec": "https://m3.material.io/components/divider/overview",
+      "source": "https://github.com/material-components/material-web/tree/v1.0.0-pre.7/divider"
+    }
   },
   {
     "label": "Icon",
     "slug": "icon",
     "imgSrc": "https://material.angular.io/assets/screenshots/icon.scene.png",
-    "desc": "Renders a specified icon."
+    "desc": "Renders a specified icon.",
+    "links": {
+      "source": "https://github.com/material-components/material-web/tree/v1.0.0-pre.7/icon"
+    }
   },
   {
     "label": "List",
     "slug": "list",
     "icon": "list",
     "imgSrc": "https://material.angular.io/assets/screenshots/list.scene.png",
-    "desc": "Presents conventional lists of items."
+    "desc": "Presents conventional lists of items.",
+    "links": {
+      "spec": "https://m3.material.io/components/lists/overview",
+      "source": "https://github.com/material-components/material-web/tree/v1.0.0-pre.7/list"
+    }
   },
   {
     "label": "Menu",
     "slug": "menu",
     "icon": "more_vert",
     "imgSrc": "https://material.angular.io/assets/screenshots/menu.scene.png",
-    "desc": "A floating panel of nestable options."
+    "desc": "A floating panel of nestable options.",
+    "links": {
+      "spec": "https://m3.material.io/components/menus/overview",
+      "source": "https://github.com/material-components/material-web/tree/v1.0.0-pre.7/menu"
+    }
   },
   {
     "label": "Navigation bar",
@@ -97,26 +140,51 @@
     "slug": "radio",
     "icon": "radio_button_checked",
     "imgSrc": "https://material.angular.io/assets/screenshots/radio.scene.png",
-    "desc": "Allows the user to select one option from a group."
+    "desc": "Allows the user to select one option from a group.",
+    "links": {
+      "spec": "https://m3.material.io/components/radio-button/overview",
+      "source": "https://github.com/material-components/material-web/tree/v1.0.0-pre.7/radio"
+    }
+  },
+  {
+    "label": "Select",
+    "slug": "select",
+    "imgSrc": "https://material.angular.io/assets/screenshots/select.scene.png",
+    "desc": "Allows the user to select one or more options using a dropdown.",
+    "links": {
+      "source": "https://github.com/material-components/material-web/tree/v1.0.0-pre.7/select"
+    }
   },
   {
     "label": "Slider",
     "slug": "slider",
     "imgSrc": "https://material.angular.io/assets/screenshots/slider.scene.png",
-    "desc": "Allows the user to input a value by dragging along a slider."
+    "desc": "Allows the user to input a value by dragging along a slider.",
+    "links": {
+      "spec": "https://m3.material.io/components/sliders/overview",
+      "source": "https://github.com/material-components/material-web/tree/v1.0.0-pre.7/slider"
+    }
   },
   {
     "label": "Switch",
     "slug": "switch",
     "icon": "toggle_on",
     "imgSrc": "https://material.angular.io/assets/screenshots/slide-toggle.scene.png",
-    "desc": "Captures boolean values as a clickable and draggable switch."
+    "desc": "Captures boolean values as a clickable and draggable switch.",
+    "links": {
+      "spec": "https://m3.material.io/components/switch/overview",
+      "source": "https://github.com/material-components/material-web/tree/v1.0.0-pre.7/switch"
+    }
   },
   {
     "label": "Text field",
     "slug": "text-field",
     "icon": "text_fields",
     "imgSrc": "https://material.angular.io/assets/screenshots/form-field.scene.png",
-    "desc": "Wraps input fields so they are displayed consistently."
+    "desc": "Wraps input fields so they are displayed consistently.",
+    "links": {
+      "spec": "https://m3.material.io/components/text-fields/overview",
+      "source": "https://github.com/material-components/material-web/tree/v1.0.0-pre.7/textfield"
+    }
   }
 ]
