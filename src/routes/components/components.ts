@@ -3,14 +3,9 @@ import componentsList from '$lib/data/components.json';
 
 export type ComponentExample = TocHeading;
 
-export interface Component {
-  label: string;
-  slug: string;
-  icon?: string;
-  imgSrc?: string;
-  desc?: string;
-  children?: Component[];
-  examples?: ComponentExample[];
-}
+import type { ComponentItem } from '$lib/data/types';
+
+/** @deprecated */
+export type Component = ComponentItem;
 
 export const components: Component[] = componentsList;

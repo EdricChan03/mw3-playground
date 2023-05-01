@@ -4,6 +4,7 @@
   import type { LayoutData } from './$types';
   import { page } from '$app/stores';
   import Toc from '$lib/components/toc/Toc.svelte';
+  import ComponentMeta from '$lib/components/meta/ComponentMeta.svelte';
 
   export let data: LayoutData;
 
@@ -16,6 +17,9 @@
   <SideNav items={data.components} class="sm:fixed sm:inset-0 sm:top-[84px]" />
 
   <main class="sm:w-full m-6 sm:pl-[300px] {hasExample ? 'sm:pr-[170px]' : ''} overflow-auto">
+    {#if currentComponent}
+      <ComponentMeta item={currentComponent} />
+    {/if}
     <slot />
   </main>
   {#if currentComponent?.examples}

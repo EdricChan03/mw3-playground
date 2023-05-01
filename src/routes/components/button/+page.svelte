@@ -23,10 +23,6 @@
 </script>
 
 <div class="flex flex-col gap-4">
-  <div class="flex gap-2 flex-wrap items-center">
-    <md-icon aria-hidden="true">widgets</md-icon>
-    <h2 class="text-2xl font-semibold">Button</h2>
-  </div>
   <!-- svelte-ignore a11y-label-has-associated-control -->
   <label class="flex flex-wrap items-center">
     <md-checkbox checked={disabled} on:change={onDisabledChange} />

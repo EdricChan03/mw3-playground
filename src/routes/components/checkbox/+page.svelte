@@ -23,10 +23,6 @@
 </script>
 
 <div class="flex flex-col gap-4">
-  <div class="flex gap-2 flex-wrap items-center">
-    <md-icon aria-hidden="true">check_box</md-icon>
-    <h2 class="text-2xl font-semibold">Checkbox</h2>
-  </div>
   <Example title="Default" id="checkbox-default">
     <div class="flex flex-col p-3">
       <!-- svelte-ignore a11y-label-has-associated-control -->

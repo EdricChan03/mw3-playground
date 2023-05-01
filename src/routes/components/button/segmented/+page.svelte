@@ -5,10 +5,6 @@
 </script>
 
 <div class="flex flex-col gap-4">
-  <div class="flex gap-2 flex-wrap items-center">
-    <md-icon aria-hidden="true">widgets</md-icon>
-    <h2 class="text-2xl font-semibold">Segmented Button</h2>
-  </div>
   <Example title="Default" id="segmented-button-default">
     <form action="get" class="flex flex-col p-6 gap-2">
       <!-- svelte-ignore a11y-label-has-associated-control -->

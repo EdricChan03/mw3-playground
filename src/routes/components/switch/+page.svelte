@@ -29,10 +29,6 @@
 </script>
 
 <div class="flex flex-col gap-4">
-  <div class="flex gap-2 flex-wrap items-center">
-    <md-icon aria-hidden="true">toggle_on</md-icon>
-    <h2 class="text-2xl font-semibold">Switch</h2>
-  </div>
   <div class="flex flex-col gap flex-wrap">
     <!-- svelte-ignore a11y-label-has-associated-control -->
     <label class="flex flex-wrap items-center">
