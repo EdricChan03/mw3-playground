@@ -51,7 +51,7 @@
     </label>
   </div>
   <Example title="Default" id="switch-default">
-    <form action="get" class="flex flex-col p-3 gap-2">
+    <form action="get" class="flex flex-col p-6 gap-2">
       <!-- svelte-ignore a11y-label-has-associated-control -->
       <label class="flex flex-wrap items-center justify-between gap-3">
         Wi-Fi
