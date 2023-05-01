@@ -8,7 +8,12 @@
 
   export let data: LayoutData;
 
-  $: currentComponent = data.components.find((cmp) => $page.url.pathname.endsWith(cmp.slug));
+  // Merge all components together
+  const components = data.components.flatMap(item => {
+    const { children, ...rest } = item;
+    return children?.concat(rest) ?? item;
+  });
+  $: currentComponent = components.find((cmp) => $page.url.pathname.endsWith(cmp.slug));
   $: hasExample = currentComponent?.examples !== undefined;
 </script>
 
