@@ -1,9 +1,10 @@
 <script lang="ts">
   import '@material/web/icon/icon';
 
-  import { page } from '$app/stores';
   import { base } from '$app/paths';
+
   import type { NavItem } from './types';
+  import SideNavItems from './SideNavItems.svelte';
 
   export let items: NavItem[];
 
@@ -24,27 +25,6 @@
         >Components</a
       >
     </h3>
-    <ul class="flex flex-col gap-1 justify-evenly">
-      {#each items as { label, slug, icon }}
-        <li
-          class="basis-1/3 border-l-4 {isActive($page.url, slug)
-            ? 'border-blue-500'
-            : ''} pl-1"
-          aria-current="false"
-        >
-          <a
-            href="{base}/components/{slug}"
-            class="flex items-center gap-2 p-3 rounded focus:ring focus:ring-inset focus:ring-opacity-50 transition-all {getClasses(
-              $page.url,
-              slug
-            )}"
-            ><div class="w-6 h-6 flex justify-center items-center">
-              <span class="material-symbols-outlined">{icon ?? 'widgets'}</span>
-            </div>
-            <span>{label}</span></a
-          >
-        </li>
-      {/each}
-    </ul>
+    <SideNavItems {items} />
   </div>
 </nav>
