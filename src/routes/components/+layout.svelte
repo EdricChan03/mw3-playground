@@ -5,6 +5,7 @@
   import { page } from '$app/stores';
   import Toc from '$lib/components/toc/Toc.svelte';
   import ComponentMeta from '$lib/components/meta/ComponentMeta.svelte';
+  import Seo from './ComponentSeo.svelte';
 
   export let data: LayoutData;
 
@@ -16,6 +17,13 @@
   $: currentComponent = components.find((cmp) => $page.url.pathname.endsWith(cmp.slug));
   $: hasExample = currentComponent?.examples !== undefined;
 </script>
+
+<!-- Meta tags -->
+<svelte:head>
+  {#if currentComponent}
+    <Seo component={currentComponent} />
+  {/if}
+</svelte:head>
 
 <Header />
 <div class="flex flex-col sm:flex-row gap-2 mt-[72px] sm:overflow-hidden h-full">
