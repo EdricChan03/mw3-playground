@@ -8,11 +8,11 @@
 
 <Example title="Theming" id="button-theming">
   <div class="flex gap-3 flex-wrap p-6">
-    <md-elevated-button label="Elevated" {disabled}></md-elevated-button>
-    <md-filled-button label="Filled" {disabled}></md-filled-button>
-    <md-outlined-button label="Outlined" {disabled}></md-outlined-button>
-    <md-text-button label="Text" {disabled}></md-text-button>
-    <md-tonal-button label="Tonal" {disabled}></md-tonal-button>
+    <md-elevated-button {disabled}>Elevated</md-elevated-button>
+    <md-filled-button {disabled}>Filled</md-filled-button>
+    <md-outlined-button {disabled}>Outlined</md-outlined-button>
+    <md-text-button {disabled}>Text</md-text-button>
+    <md-tonal-button {disabled}>Tonal</md-tonal-button>
   </div>
 
   <div class="flex flex-col gap-3 px-6 pb-6">
