@@ -13,10 +13,9 @@
 
   import Example from '$lib/components/example/Example.svelte';
 
-  import type { PageData } from './$types';
-  import ThemingBtns from './ThemingBtns.svelte';
-
-  export let data: PageData;
+  import DefaultButton from '$examples/button/default/DefaultButton.svelte';
+  import ButtonWithIcons from '$examples/button/icons/ButtonWithIcons.svelte';
+  import ButtonTheming from '$examples/button/theming/ButtonTheming.svelte';
 
   let disabled = false;
 
@@ -32,31 +31,14 @@
     Disable buttons
   </label>
   <Example title="Default" id="button-default">
-    <div class="flex gap-3 flex-wrap items-center p-6">
-      <md-elevated-button {disabled}>Elevated</md-elevated-button>
-      <md-filled-button {disabled}>Filled</md-filled-button>
-      <md-outlined-button {disabled}>Outlined</md-outlined-button>
-      <md-text-button {disabled}>Text</md-text-button>
-      <md-tonal-button {disabled}>Tonal</md-tonal-button>
-      <md-fab {disabled}><md-icon slot="icon">add</md-icon></md-fab>
-      <md-fab label="Add" {disabled}><md-icon slot="icon">add</md-icon></md-fab>
-      <md-branded-fab label="Add" {disabled}><md-icon slot="icon">add</md-icon></md-branded-fab>
-    </div>
+    <DefaultButton {disabled} />
   </Example>
 
   <Example title="With icons" id="button-icons">
-    <div class="flex gap-3 p-6">
-      <md-tonal-button {disabled}>
-        Send
-        <svg slot="icon" viewBox="0 0 48 48"><path d="M6 40V8l38 16Zm3-4.65L36.2 24 9 12.5v8.4L21.1 24 9 27Zm0 0V12.5 27Z"/></svg>
-      </md-tonal-button>
-
-      <md-text-button trailingicon {disabled}>
-        Open
-        <svg slot="icon" viewBox="0 0 48 48"><path d="M9 42q-1.2 0-2.1-.9Q6 40.2 6 39V9q0-1.2.9-2.1Q7.8 6 9 6h13.95v3H9v30h30V25.05h3V39q0 1.2-.9 2.1-.9.9-2.1.9Zm10.1-10.95L17 28.9 36.9 9H25.95V6H42v16.05h-3v-10.9Z"/></svg>
-      </md-text-button>
-    </div>
+    <ButtonWithIcons {disabled} />
   </Example>
 
-  <ThemingBtns {disabled} />
+  <Example title="Theming" id="button-theming">
+    <ButtonTheming {disabled} />
+  </Example>
 </div>
