@@ -1,15 +1,18 @@
 <script lang="ts">
-  import Example from '$lib/components/example/Example.svelte';
   import '@material/web/button/elevated-button';
   import '@material/web/button/filled-button';
   import '@material/web/button/outlined-button';
   import '@material/web/button/text-button';
   import '@material/web/button/tonal-button';
   import '@material/web/checkbox/checkbox';
-  import type { MdCheckbox } from '@material/web/checkbox/checkbox';
   import '@material/web/fab/branded-fab';
   import '@material/web/fab/fab';
   import '@material/web/icon/icon';
+
+  import type { MdCheckbox } from '@material/web/checkbox/checkbox';
+
+  import Example from '$lib/components/example/Example.svelte';
+
   import type { PageData } from './$types';
   import ThemingBtns from './ThemingBtns.svelte';
 
