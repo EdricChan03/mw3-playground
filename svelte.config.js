@@ -25,6 +25,10 @@ const config = {
       entries: ['*', ...components.map(c => `/components/${c.slug}`)]
     },
 
+    alias: {
+      '$examples/*': './src/lib/examples/*'
+    },
+
 		paths: {
 			base: kitBasePath
 		}
