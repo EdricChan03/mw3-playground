@@ -1,3 +1,9 @@
+export interface ComponentLink {
+  title: string;
+  link: string;
+  icon?: string;
+}
+
 export interface ComponentItem {
   label: string;
   slug: string;
@@ -7,7 +13,7 @@ export interface ComponentItem {
   links?: {
     spec?: string;
     source?: string;
-  }
+  } | ComponentLink[];
   examples?: ComponentExampleItem[];
   children?: Omit<ComponentItem, 'children'>[];
 }
