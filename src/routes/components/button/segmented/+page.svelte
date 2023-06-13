@@ -1,7 +1,7 @@
 <script lang="ts">
   import Example from '$lib/components/example/Example.svelte';
-  import '@material/web/segmentedbutton/outlined-segmented-button';
-  import '@material/web/segmentedbuttonset/outlined-segmented-button-set';
+  import '@material/web/labs/segmentedbutton/outlined-segmented-button';
+  import '@material/web/labs/segmentedbuttonset/outlined-segmented-button-set';
 </script>
 
 <div class="flex flex-col gap-4">
