@@ -32,6 +32,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@material/material-color-utilities": "^0.2.6",
 		"@material/web": "1.0.0-pre.10"
 	}
 }

@@ -10,7 +10,7 @@
   {#each data.components as cmp}
     <a
       href="{base}/components/{cmp.slug}"
-      class="hover:bg-slate-100 active:bg-slate-200 transition-all basis-1/3 rounded"
+      class="bg-m3-surface-container hover:bg-m3-surface-container-high active:bg-m3-surface-container-highest text-m3-on-surface transition-all basis-1/3 rounded"
     >
       <article class="flex flex-col border rounded h-full overflow-hidden">
         {#if cmp.imgSrc}

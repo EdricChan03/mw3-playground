@@ -5,23 +5,24 @@
 
   import type { NavItem } from './types';
   import SideNavItems from './SideNavItems.svelte';
+  import SideNavItem from './SideNavItem.svelte';
 
   export let items: NavItem[];
 
-  const defaultClasses = 'focus:ring-slate-700 bg-slate-100 hover:bg-slate-200 active:bg-slate-300';
-  const activeClasses = 'focus:ring-blue-700 bg-blue-100 hover:bg-blue-200 active:bg-blue-300';
-
-  const getClasses = (url: URL, href: string) =>
-    isActive(url, href) ? activeClasses : defaultClasses;
-  const isActive = (url: URL, href: string) => url.pathname.endsWith(href);
+  export const themingItem: NavItem = {
+    label: 'Theming',
+    slug: 'theming',
+    icon: 'palette'
+  };
 </script>
 
 <nav class="flex flex-col gap-1 p-6 sm:w-[300px] sm:border-r {$$props.class}">
   <div class="flex flex-col gap-1 overflow-auto">
+    <SideNavItem item={themingItem} />
     <h3 class="font-semibold text-sm sticky top-0">
       <a
         href="{base}/components"
-        class="block p-2 rounded focus:ring focus:ring-inset focus:ring-slate-100 focus:ring-opacity-50 transition-all bg-slate-500 hover:bg-slate-600 active:bg-slate-700 text-white"
+        class="block p-2 rounded focus:ring focus:ring-inset focus:ring-m3-secondary focus:ring-opacity-50 transition-all bg-m3-secondary-container text-m3-on-secondary-container"
         >Components</a
       >
     </h3>

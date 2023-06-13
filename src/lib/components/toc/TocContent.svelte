@@ -10,7 +10,7 @@
       {#if heading.children}
         <svelte:self {...heading} />
       {:else}
-        <a href="#{heading.slug}" class="block rounded transition-all p-2 hover:bg-blue-100 active:bg-blue-200 focus:ring focus:ring-inset focus:ring-blue-700 focus:ring-opacity-50">{heading.title}</a>
+        <a href="#{heading.slug}" class="block rounded transition-all p-2  hover:bg-m3-secondary-container hover:text-m3-on-secondary-container">{heading.title}</a>
       {/if}
     </li>
   {/each}

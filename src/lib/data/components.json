@@ -1,5 +1,13 @@
 [
   {
+    "label": "Theming",
+    "slug": "theming",
+    "links": [
+      { "title": "Documentation", "link": "https://github.com/material-components/material-web/blob/v1.0.0-pre.10/docs/theming.md", "icon": "article" }
+    ],
+    "excludeNav": true
+  },
+  {
     "label": "Badge",
     "slug": "badge",
     "imgSrc": "https://material.angular.io/assets/screenshots/badge.scene.png",

@@ -8,15 +8,15 @@
 
   export let componentPath = item.slug;
 
-  export let defaultClass = 'focus:ring-slate-700 bg-slate-100 hover:bg-slate-200 active:bg-slate-300';
-  export let activeClass = 'focus:ring-blue-700 bg-blue-100 hover:bg-blue-200 active:bg-blue-300';
+  export let defaultClass = 'focus:ring-m3-inverse-surface bg-m3-surface-variant text-m3-surface-on-variant';
+  export let activeClass = 'focus:ring-m3-primary-container bg-m3-primary text-m3-on-primary';
 
   const getClasses = (url: URL, href: string) =>
     isActive(url, href) ? activeClass : defaultClass;
   const isActive = (url: URL, href: string) => url.pathname.endsWith(href);
 </script>
 <li
-  class="basis-1/3 border-l-4 {isActive($page.url, item.slug) ? 'border-blue-500' : ''} pl-1"
+  class="basis-1/3 border-l-4 {isActive($page.url, item.slug) ? 'border-m3-primary' : ''} pl-1"
   aria-current="false"
 >
   <a

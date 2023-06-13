@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media (pointer: fine) {
+  :host {
+    --_scrollbar-width: 8px;
+  }
+
+  /* Firefox 64+ */
+  .m3-scrollbar {
+    scrollbar-color: var(--md-sys-color-primary) transparent;
+    scrollbar-width: 8px;
+  }
+
+  /* Chromium + Safari */
+  .m3-scrollbar::-webkit-scrollbar {
+    background-color: transparent;
+    width: 8px;
+  }
+
+  .m3-scrollbar::-webkit-scrollbar-thumb {
+    background-color: var(--md-sys-color-primary);
+    border-radius: calc(var(--_scrollbar-width) / 2);
+  }
+}
